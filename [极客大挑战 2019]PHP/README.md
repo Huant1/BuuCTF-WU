@@ -59,5 +59,8 @@ class Name{
 ?>
 ```
 
+điều đầu tiên mình đập vào mắt mình là: 
 
+
+![image](https://user-images.githubusercontent.com/95614411/173054943-b8052b7b-d389-4068-97a6-79a2ea9686bb.png)
 
