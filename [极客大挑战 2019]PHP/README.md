@@ -111,5 +111,6 @@ Và kết quả:
 ###### Thanks for reading!
 
 
+>Note: Đây là lỗi thuộc dạng PHP Deserialization
 
-
+Tham khảo thêm [tại đây](https://viblo.asia/p/khai-thac-php-deserialization-07LKXbLPlV4)
