@@ -3,7 +3,7 @@
 [Link](https://buuoj.cn/challenges#[%E6%9E%81%E5%AE%A2%E5%A4%A7%E6%8C%91%E6%88%98%202019]PHP)
 
 Đầu tiên, khi mình boot instance và truy cập vào challenge, mình cảm thấy rất bất ngờ với giao diện của trang web. Mình nghĩ rằng author đã làm việc rất chăm chỉ.
-(ảnh 1)
+![1](https://user-images.githubusercontent.com/95614411/173055220-97ee6bb8-4e31-43d2-bb53-170f542d6917.PNG)
 
 Vì author đã gợi ý là họ thường xuyên sao lưu dữ liệu trang web, nhưng vì mình không tìm được manh mối nào khi đọc source HTML, nên mình quyết định dùng Dirsearch để tìm.
 
@@ -11,8 +11,10 @@ Vì author đã gợi ý là họ thường xuyên sao lưu dữ liệu trang we
 
 Và mình phát hiện ra được một link thú vị, có thể down về source code của web.
 
-(ảnh 2)
-(ảnh 3)
+![2](https://user-images.githubusercontent.com/95614411/173055306-2f4b161c-b5c0-40cb-9f2c-c816f5e6cc13.PNG)
+
+![3](https://user-images.githubusercontent.com/95614411/173055353-f97a15fe-66ad-42f5-a8c4-4d1105c84a4d.PNG)
+
 
 ở file class.php:
 ```
