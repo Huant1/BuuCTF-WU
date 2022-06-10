@@ -16,7 +16,8 @@ Và mình phát hiện ra được một link thú vị, có thể down về sou
 
 ở file class.php:
 
-`<?php
+`
+<?php
 include 'flag.php';
 
 
@@ -56,7 +57,8 @@ class Name{
         }
     }
 }
-?>`
+?>
+`
 
 
 
