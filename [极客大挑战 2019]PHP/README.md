@@ -66,3 +66,48 @@ class Name{
 
 ![image](https://user-images.githubusercontent.com/95614411/173054943-b8052b7b-d389-4068-97a6-79a2ea9686bb.png)
 
+Ở đây, mình xác nhận được, để nhận được flag thì mình phải đăng nhập vào được quyền admin với:
+> Username: admin
+> 
+> Password: 100
+
+Và bây giờ, mình đối mặt với 2 vấn đề: 
+- Làm sao để đưa lên server username và password?
+- làm sao để đưa vào khi username, password đều nằm trong 1 class?
+
+Mình tiếp tục mở file index.php lên và thấy:
+
+![image](https://user-images.githubusercontent.com/95614411/173056586-1a476fa6-46bc-4c6a-b0c3-0b1fbf2ad4b9.png)
+
+Vậy là mình có thể đưa vào với query string `?select=`
+
+Kế tiếp, mình nhớ là đã xem trên kênh Cyber Jutsu về ý tưởng đưa một ojbect qua query string, nhưng và mình phải tìm cách vượt qua function __wakeup() 
+
+![image](https://user-images.githubusercontent.com/95614411/173057145-80e07ba6-e84e-4554-92ce-41ba85f27968.png)
+
+Mình đã biến tấu một chút ở code và dùng hàm `serialize()` để xem mã hóa của code khi mình tạo một object như bên dưới:
+
+![image](https://user-images.githubusercontent.com/95614411/173057544-d4b9face-7546-4dea-8510-82ac60d0e8aa.png)
+
+Và khi chạy trên localhost thì mình được:
+
+![image](https://user-images.githubusercontent.com/95614411/173057621-60728caf-572a-4881-8841-240793d9a3ba.png)
+
+
+Payload ban đầu của mình: 
+`?select="O:4:"Name":2:{s:14:"%00Name%00username";s:5:"admin";s:14:"%00Name%00password";i:100;}"
+- ở đây, vì hai biến `username` và `password` mang thuộc tính private, nên mình dùng `%00` điền vào trước chuỗi để khi truy xuất vào được đầy đủ.
+ 
+Và để vượt qua function `__wakeup()` thì mình đã payload một chút:
+`?select="O:4:"Name":3:{s:14:"%00Name%00username";s:5:"admin";s:14:"%00Name%00password";i:100;}"
+
+Và kết quả:
+
+![image](https://user-images.githubusercontent.com/95614411/173059398-29fc5a8e-43c9-47a6-be28-35ce755c04a5.png)
+
+
+
+
+
+
+
